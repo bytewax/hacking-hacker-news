@@ -1,4 +1,4 @@
-![dashboard](https://github.com/bytewax/developer-relations/assets/6073079/ac1c34e2-0f9c-474e-bda5-15613fdddcfc)
+![dashboard](https://github.com/bytewax/hacking-hacker-news/assets/6073079/15c0f21a-d48d-4d11-b2ac-57f6631b147d)
 
 By @awmatheson
 
@@ -10,7 +10,7 @@ In this blog post, I'll share how I (with support from [Jove from Timeplus](http
 
 I sketched out the result below. At the end, you'll see a Grafana dashboard that dynamically shows your personalized news. It is powered by a Bytewax pipeline streaming HN stories and comments into Proton where I join and analyze the data in real time.
 
-![hn_proton_grafana(1)](https://github.com/bytewax/developer-relations/assets/6073079/485f6bba-3620-47d9-b937-738680dfab57)
+![hn_proton_grafana(1)](https://github.com/bytewax/hacking-hacker-news/assets/6073079/02a8658a-fb7a-493d-86c9-e3471a0b89e1)
 
 Want to skip to running the code → Run the full pipeline and dashboard with `docker compose up`.
 
@@ -290,7 +290,7 @@ CREATE VIEW IF NOT EXISTS comment AS SELECT * FROM hn_comments WHERE _tp_time>ea
 
 With our views in hand, we can make a streaming query. You could do this in the [Grafana explore query editor](http://localhost:3000/explore):
 
-![explore](https://github.com/bytewax/developer-relations/assets/6073079/0d4f27c6-681f-4e30-8bf8-74483485968d)
+![explore](https://github.com/bytewax/hacking-hacker-news/assets/6073079/0f0058b5-48c8-4ffe-969f-958e5cf60797)
 
 ```SQL
 select * from comment;
@@ -304,7 +304,7 @@ from story join comment on story.id=comment.root_id;
 
 The docker compose file creates a dashboard for you that you can view in the [grafana dashboard locally](http://localhost:3000/dashboards). You can modify this and make your own.
 
-![dashboard](https://github.com/bytewax/developer-relations/assets/6073079/f58eba5a-fc2f-4046-93d3-a40b807f8c83)
+![dashboard](https://github.com/bytewax/hacking-hacker-news/assets/6073079/e28f2ec1-d3cd-4f93-8237-340cb3638ea5)
 
 Have you made something interesting with this? We would love to see it! Share it on Reddit, Hacker News or your favorite social media platform and let us know :). 
 
