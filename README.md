@@ -6,7 +6,7 @@ By @awmatheson
 
 If you are like me, you eventually get tired of whatever algorithm is serving you your media. Whether it is Twitter (oops, I mean X) or Reddit, or Hacker News (HN). My recent work with the Hacker News API for a [conference talk on RAG for AI](https://www.youtube.com/watch?v=lRleB4E0Fk4&t=4s) sparked a new curiosity. After the RAG pipelines for AI work using Hacker News with Bytewax, I was curious about a new challenge: creating a customizable dashboard to serve up my HN stories in a personal way.
 
-In this blog post, I'll share how I (with support from [Jove from Timeplus](https://www.linkedin.com/in/jovezhong/)) combining different technologies (Bytewax, Proton, and Grafana) to create such a personalized dashboard. The combination of the products is really fun (My opinion :slightly_smiling_face:); You get the flexibility of imperative programming with Python (Bytewax) and the power of declarative data processing through SQL (Proton).  
+In this blog post, I'll share how I (with support from [Jove from Timeplus](https://www.linkedin.com/in/jovezhong/)) combining different technologies ((Bytewax)[https://github.com/bytewax/bytewax], [Proton](https://github.com/timeplus-io/proton), and Grafana) to create such a personalized dashboard. The combination of the products is really fun (My opinion :slightly_smiling_face:); You get the flexibility of imperative programming with Python (Bytewax) and the power of declarative data processing through SQL (Proton).  
 
 I sketched out the result below. At the end, you'll see a Grafana dashboard that dynamically shows your personalized news. It is powered by a Bytewax pipeline streaming HN stories and comments into Proton where I join and analyze the data in real time.
 
@@ -16,7 +16,7 @@ Want to skip to running the code → Run the full pipeline and dashboard with `d
 
 ## Introducing Bytewax
 
-Jove (One of Timeplus' founders) and I met for a Streaming Caffeine podcast before, I shared why I started Bytewax, and Jove talks about why they started Timeplus/Proton. Watch the whole episode [here](https://youtu.be/FJIOmB64h1k?si=ZxVkwo2SX4M_IprO)!
+Jove (One of Proton's creators) and I met for a Streaming Caffeine podcast before, I shared why I started Bytewax, and Jove talks about why they started Timeplus/Proton. Watch the whole episode [here](https://youtu.be/FJIOmB64h1k?si=ZxVkwo2SX4M_IprO)!
 
 Bytewax is an [open-source project](https://github.com/bytewax/bytewax) known for facilitating custom connections to many data sources. The often complex task of processing streaming data is much more manageable with it. For many of us, its input and output API will look friendly and familiar. The ability to run Python native code and re-use the Python libraries you already know also lowers the learning barrier.
 In this post, I will showcase these advantages while building a custom input connector that will read Hacker News (yes, the Hacker News) updates to keep track of trending posts and prolific commenters.
