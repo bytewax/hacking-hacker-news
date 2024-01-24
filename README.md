@@ -34,7 +34,8 @@ _"With Proton, even on a single commodity machine, you can get 4-millisecond end
 
 The unique capability to easily ingest a variety of data sources with Python in Bytewax and the power of SQL based processing of Proton is a match made in heaven!
 
-![michie](https://github.com/bytewax/developer-relations/assets/6073079/8278adac-8d43-4344-8f2a-c5e0916ab503)
+![michie](https://github.com/bytewax/hacking-hacker-news/assets/6073079/5ab0c698-baeb-4e5e-9e69-a9bed64ecf59)
+
 
 ## Let’s dive into the code!
 
