@@ -1,5 +1,7 @@
 ![dashboard](https://github.com/bytewax/developer-relations/assets/6073079/ac1c34e2-0f9c-474e-bda5-15613fdddcfc)
 
+By @awmatheson
+
 ## Analyzing Prolific Hacker News Commenters and Trending Stories in real-time
 
 If you are like me, you eventually get tired of whatever algorithm is serving you your media. Whether it is Twitter (oops, I mean X) or Reddit, or Hacker News (HN). My recent work with the Hacker News API for a [conference talk on RAG for AI](https://www.youtube.com/watch?v=lRleB4E0Fk4&t=4s) sparked a new curiosity. After the RAG pipelines for AI work using Hacker News with Bytewax, I was curious about a new challenge: creating a customizable dashboard to serve up my HN stories in a personal way.
