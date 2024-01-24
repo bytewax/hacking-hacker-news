@@ -42,14 +42,14 @@ First things first, I need to connect to the data source. Bytewax is flexible, a
 Let me walk you through a code snippet that demonstrates how to do that using Bytewax.
 > Imports skipped for brevity
 
-``python
+```python
 class HNSource(SimplePollingSource):
     def next_item(self):
         return (
             "GLOBAL_ID",
             requests.get("https://hacker-news.firebaseio.com/v0/maxitem.json").json(),
         )
-``
+```
 
 `_HNSource` uses the built-in [`SimplePollingSource`](https://bytewax.io/apidocs/bytewax.inputs#bytewax.inputs.SimplePollingSource) to effectively poll the HN API for the most recent ID.
 
