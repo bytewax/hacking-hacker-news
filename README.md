@@ -23,7 +23,7 @@ In this post, I will showcase these advantages while building a custom input con
 
 ## Timeplus and Proton
 
-Proton is a really cool open source project built on top of the much-loved project, Clickhouse. The company behind the project, Timeplus was started by Splunk engineers out of their experience and learnings while building streaming engines at Splunk.
+[Proton](https://github.com/timeplus-io/proton) is a really cool open source project built on top of the much-loved project, Clickhouse. The company behind the project, Timeplus was started by Splunk engineers out of their experience and learnings while building streaming engines at Splunk.
 
 As described on their website and marketing materials:
 _"Timeplus is a unified platform tailored for both streaming and historical data processing. At the heart of Timeplus is Proton, an open source project that functions as a streaming SQL engine, a fast and lightweight alternative to Apache Flink in a single binary, powered by ClickHouse. Proton is heralded for its ability to unlock streaming data value using SQL, offering a powerful end-to-end capability for processing streaming and historical data quickly and intuitively."_
@@ -309,7 +309,9 @@ The docker compose file creates a dashboard for you that you can view in the [gr
 Have you made something interesting with this? We would love to see it! Share it on Reddit, Hacker News or your favorite social media platform and let us know :). 
 
 If you think Bytewax and Proton are cool, show your support on GitHub with a star.
+
 ⭐ [Bytewax](https://github.com/bytewax/bytewax)
+
 ⭐ [Proton](https://github.com/timeplus-io/proton)
 
 
